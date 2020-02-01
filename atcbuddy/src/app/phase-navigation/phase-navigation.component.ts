@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-phase-navigation',
   templateUrl: './phase-navigation.component.html',
-  styleUrls: ['./phase-navigation.component.css']
+  styleUrls: ['./phase-navigation.component.css'],
+
 })
 export class PhaseNavigationComponent implements OnInit {
 
@@ -15,5 +16,7 @@ export class PhaseNavigationComponent implements OnInit {
     //fetch all phases
     this.phases = ["taxi", "take-off"]
   }
-
+ onClick(phase){
+  console.log(phase);
+ }
 }

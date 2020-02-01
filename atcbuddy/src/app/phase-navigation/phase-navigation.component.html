@@ -1,5 +1,5 @@
-<ul *ngFor="let phase of phases">
-   <li>
+<mat-list *ngFor="let phase of phases">
+    <button mat-raised-button (click)=onClick(phase)>
         {{phase}}
-   </li> 
-</ul>
+    </button>
+</mat-list>
