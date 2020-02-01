@@ -1,7 +1,8 @@
 export class Phase{
-    id: string;
-    phasename:string;
+    id:string;
+    phase:string;
     phasedetail:string;
     phaseinput:string[];
     texttosay:string;
+    
 }

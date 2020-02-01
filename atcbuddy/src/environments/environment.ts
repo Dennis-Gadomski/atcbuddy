@@ -5,12 +5,14 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID"
+    apiKey: "AIzaSyCUxohm9XFuwUp_V6qjSvkKDdC9N67jSRQ",
+    authDomain: "atcbuddy-d2750.firebaseapp.com",
+    databaseURL: "https://atcbuddy-d2750.firebaseio.com",
+    projectId: "atcbuddy-d2750",
+    storageBucket: "atcbuddy-d2750.appspot.com",
+    messagingSenderId: "496966007079",
+    appId: "1:496966007079:web:8eac2a4849d83c7bb59102",
+    measurementId: "G-TZYRJKSDZ4"
   }
 };
 

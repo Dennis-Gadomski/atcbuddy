@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Phase } from '../models/phase';
 
 @Component({
   selector: 'app-phase-navigation',
@@ -9,14 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class PhaseNavigationComponent implements OnInit {
 
   constructor() { }
-
-  phases: string[];
+  
+  @Input() phases: Phase[];
 
   ngOnInit() {
-    //fetch all phases
-    this.phases = ["taxi", "take-off"]
+    console.log(this.phases)
   }
  onClick(phase){
-  console.log(phase);
+  //send phase to app to update Phasedetaillist
  }
 }

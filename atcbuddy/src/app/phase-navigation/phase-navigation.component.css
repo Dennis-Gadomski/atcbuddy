@@ -1,0 +1,9 @@
+mat-list {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  button{
+      width: 150px;
+  }
