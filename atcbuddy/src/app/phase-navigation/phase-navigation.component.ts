@@ -12,11 +12,18 @@ export class PhaseNavigationComponent implements OnInit {
   constructor() { }
   
   @Input() phases: Phase[];
-
+  phaseNames: string[];
+  
   ngOnInit() {
-    console.log(this.phases)
   }
- onClick(phase){
-  //send phase to app to update Phasedetaillist
- }
+
+  ngOnChanges() {
+    if(this.phases) {
+      this.phaseNames = [...new Set(this.phases.map(phase => phase.phase))];
+    }
+  }
+
+  onClickPhase(phase){
+    console.log(phase);
+  }
 }

@@ -1,6 +1,6 @@
 <mat-list>
-    <mat-list-item *ngFor="let phase of phases"> 
-        <button mat-stroked-button	>{{phase.phase}}</button> 
+    <mat-list-item *ngFor="let phase of phaseNames"> 
+        <button mat-stroked-button (click)="onClickPhase(phase)">{{phase}}</button> 
     </mat-list-item>
 
    </mat-list>
