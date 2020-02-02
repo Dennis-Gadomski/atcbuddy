@@ -1,3 +1,17 @@
+<div class="wrapper">
 <div class="phasenavigation">
-  <app-phase-navigation [phases]="phases"></app-phase-navigation>
+  <app-phase-navigation [phases]="phases" (phaseSelectedEventEmitter)="eventClickedPhase($event)" ></app-phase-navigation>
+</div>
+<div class="globalvariables">
+<form class="callsignform">
+  <mat-form-field class="callsignformfield">
+  <input matInput  placeholder="Callsign"  autocomplete="off" [(ngModel)]="callsign" name="callsign"/>
+</mat-form-field>
+</form>
+</div>
+
+<div class="phasedetaillist">
+  <app-phase-detail [phases]="phases" [selectedPhase]="selectedPhase" ></app-phase-detail>
+</div>
+
 </div>

@@ -1,0 +1,25 @@
+.phasenavigation {
+    height: 250px;
+    width: 170px;
+    margin:20px;
+    padding: 20px;
+    background-color: #B2D6FF;    /* Medium blue */
+    float: left; 
+}
+
+  .globalvariables{
+    height: 50px;
+    float: left; 
+    margin:20px;
+    padding: 20px;
+    background-color: #B2D6FF;    /* Medium blue */
+  }
+
+  .phasedetaillist {
+    height: 100px;
+    width: 300px;
+    margin:20px;
+    padding: 20px;
+    background-color: #B2D6FF;    /* Medium blue */
+    float: left; 
+}

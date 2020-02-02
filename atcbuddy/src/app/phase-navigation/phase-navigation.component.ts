@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import { Phase } from '../models/phase';
 
 @Component({
@@ -12,6 +12,7 @@ export class PhaseNavigationComponent implements OnInit {
   constructor() { }
   
   @Input() phases: Phase[];
+  @Output() phaseSelectedEventEmitter = new EventEmitter();
   phaseNames: string[];
   
   ngOnInit() {
@@ -24,6 +25,6 @@ export class PhaseNavigationComponent implements OnInit {
   }
 
   onClickPhase(phase){
-    console.log(phase);
+    this.phaseSelectedEventEmitter.emit(phase);
   }
 }

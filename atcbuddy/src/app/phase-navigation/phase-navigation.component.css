@@ -1,8 +1,6 @@
-mat-list {
-    width: 250px;
-    height: 200px;
-    margin: 10px;
+.phasenameList {
     border: 1px solid #555;
+    align-items: center;
   }
   button{
       width: 150px;

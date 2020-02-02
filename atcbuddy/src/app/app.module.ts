@@ -15,14 +15,18 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { PhaseDetailComponent } from './phase-detail/phase-detail.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhaseNavigationComponent
+    PhaseNavigationComponent,
+    PhaseDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,10 @@ import { AngularFirestore } from '@angular/fire/firestore';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatInputModule,
+    FormsModule,
+    MatRadioModule
   ],
   providers: [PhaseService, AngularFirestore],
   bootstrap: [AppComponent]

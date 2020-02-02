@@ -1,0 +1,13 @@
+<div class="detailswrapper">
+    <label id="example-radio-group-label">Select a phase</label>
+
+    <mat-radio-group  aria-labelledby="radio-group-label"
+    class="radio-group"
+    [(ngModel)]="selectedPhaseDetail"  >
+    <mat-radio-button (click)=onValueChange(phasedetail) [value]="phasedetail" *ngFor="let phasedetail of phaseDetails">
+        {{phasedetail}}
+    </mat-radio-button>
+
+  </mat-radio-group>
+
+  </div>
