@@ -29,12 +29,12 @@ export class AppComponent {
   }
 
   eventClickedPhase(event){
-    console.log(event);
       this.selectedPhase = event;
   }
 
   eventClickedPhaseDetail(event){
-    console.log(event);
+  
+
     this.selectedPhaseDetail = event;
   }
 

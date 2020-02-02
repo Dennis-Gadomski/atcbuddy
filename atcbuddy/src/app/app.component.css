@@ -1,3 +1,11 @@
+.wrapper{
+    max-width: 960px; /* 20px smaller, to fit the paddings on the sides */
+    margin: auto;
+    padding: 10px;
+
+}
+
+
 .phasenavigation {
     height: 250px;
     width: 170px;
@@ -13,6 +21,7 @@
     margin:20px;
     padding: 20px;
     background-color: #B2D6FF;    /* Medium blue */
+    width: fit-content;
   }
 
   .phasedetaillist {
@@ -21,5 +30,16 @@
     margin:20px;
     padding: 20px;
     background-color: #B2D6FF;    /* Medium blue */
+    
     float: left; 
+}
+.phaseform{
+        width:800px;
+        height: 800px;
+        background-color: bisque;
+        float: left;
+        clear: left;
+        margin:20px;
+        padding: 20px;
+    
 }

@@ -20,13 +20,15 @@ import {FormsModule} from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { PhaseDetailComponent } from './phase-detail/phase-detail.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { PhaseFormComponent } from './phase-form/phase-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PhaseNavigationComponent,
-    PhaseDetailComponent
+    PhaseDetailComponent,
+    PhaseFormComponent
   ],
   imports: [
     BrowserModule,
