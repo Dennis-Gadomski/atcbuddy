@@ -26,13 +26,13 @@ export class PhaseDetailComponent implements OnInit {
     if(this.selectedPhase) {
       this.filteredPhase = this.phases.filter(phase => phase.phase == this.selectedPhase);
       this.phaseDetails = [...new Set(this.filteredPhase.map(phase => phase.phasedetail ))];
+      
     }
 
 
   }
 
   onValueChange(phaseDatail){
-    console.log(phaseDatail);
     this.phaseDetailSelectedEventEmitter.emit(phaseDatail)
   }
 

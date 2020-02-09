@@ -3,6 +3,6 @@ export class Phase{
     phase:string;
     phasedetail:string;
     phaseinput:string[];
-    texttosay:string;
+    texttosay:string[];
     
 }

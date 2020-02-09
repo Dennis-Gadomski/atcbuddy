@@ -14,7 +14,7 @@
   <app-phase-detail [phases]="phases" [selectedPhase]="selectedPhase" (phaseDetailSelectedEventEmitter)="eventClickedPhaseDetail($event)" ></app-phase-detail>
 </div>
 <div class="phaseform" *ngIf="selectedPhaseDetail">
-  <app-phase-form [selectedPhaseDetail]="selectedPhaseDetail" [phases]="phases"  ></app-phase-form>
+  <app-phase-form [selectedPhaseDetail]="selectedPhaseDetail" [phases]="phases"  [callsign]="callsign" ></app-phase-form>
 </div>
 
 </div>

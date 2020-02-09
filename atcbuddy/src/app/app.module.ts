@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PhaseNavigationComponent } from './phase-navigation/phase-navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhaseService } from './services/PhaseService';
+import { TextToSayConverterService } from './services/text-to-say-converter.service';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
@@ -21,6 +22,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { PhaseDetailComponent } from './phase-detail/phase-detail.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { PhaseFormComponent } from './phase-form/phase-form.component';
+import { TexttosayComponent } from './texttosay/texttosay.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { PhaseFormComponent } from './phase-form/phase-form.component';
     AppComponent,
     PhaseNavigationComponent,
     PhaseDetailComponent,
-    PhaseFormComponent
+    PhaseFormComponent,
+    TexttosayComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { PhaseFormComponent } from './phase-form/phase-form.component';
     FormsModule,
     MatRadioModule
   ],
-  providers: [PhaseService, AngularFirestore],
+  providers: [PhaseService, AngularFirestore, TextToSayConverterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
