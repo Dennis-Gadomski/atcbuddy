@@ -3,7 +3,7 @@
   }
   button{
       width: 150px;
-      background-color: rgba(144, 112, 218, 0.301);
-      border: 6px solid rgb(0, 0, 0);
-
+      background-color: rgba(197, 184, 228, 0.514);
+      border: 2px solid rgb(0, 0, 0);
+      font-weight: bold;
     }
