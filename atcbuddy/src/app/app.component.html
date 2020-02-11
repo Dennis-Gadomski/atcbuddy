@@ -1,13 +1,16 @@
 <div class="wrapper">
+
+  <div class="donation">
+    <form #donationform  action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="HWU2D4CNYW5FJ" />
+      <input (click)="donationform.submit()" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0"  name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_BE/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+  </div>
+
 <div class="phasenavigation">
   <app-phase-navigation [phases]="phases" (phaseSelectedEventEmitter)="eventClickedPhase($event)" ></app-phase-navigation>
-</div>
-<div class="globalvariables">
-<form class="callsignform">
-  <mat-form-field class="callsignformfield">
-  <input matInput  placeholder="Callsign"  autocomplete="off" [(ngModel)]="callsign" name="callsign"/>
-</mat-form-field>
-</form>
 </div>
 
 <div class="phasedetaillist">

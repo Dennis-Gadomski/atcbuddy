@@ -23,6 +23,8 @@ import { PhaseDetailComponent } from './phase-detail/phase-detail.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { PhaseFormComponent } from './phase-form/phase-form.component';
 import { TexttosayComponent } from './texttosay/texttosay.component';
+import { DonationComponent } from './donation/donation.component';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { TexttosayComponent } from './texttosay/texttosay.component';
     PhaseNavigationComponent,
     PhaseDetailComponent,
     PhaseFormComponent,
-    TexttosayComponent
+    TexttosayComponent,
+    DonationComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { TexttosayComponent } from './texttosay/texttosay.component';
     MatSidenavModule,
     MatInputModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    NgxPayPalModule
   ],
   providers: [PhaseService, AngularFirestore, TextToSayConverterService],
   bootstrap: [AppComponent]
