@@ -1,9 +1,12 @@
 .phasenameList {
     align-items: center;
   }
-  button{
-      width: 150px;
+button{
+      width: 250px;
+      overflow: hidden;
+      white-space: nowrap;
       background-color: rgba(197, 184, 228, 0.514);
       border: 2px solid rgb(0, 0, 0);
       font-weight: bold;
+      font-size:12px;
     }

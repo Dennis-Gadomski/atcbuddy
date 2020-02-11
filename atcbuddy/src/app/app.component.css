@@ -10,7 +10,7 @@
 
 .phasenavigation {
     height: 250px;
-    width: 170px;
+    width: 200px;
     margin:20px;
     padding: 20px;
     background-color: #27346d3d;    /* Medium blue */
@@ -33,7 +33,7 @@
 
   .phasedetaillist {
     height: 250px;
-    width: 300px;
+    width: 250px;
     margin:20px;
     padding: 20px;
     background-color: #27346d3d;    /* Medium blue */

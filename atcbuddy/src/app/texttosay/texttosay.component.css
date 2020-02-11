@@ -1,3 +1,13 @@
 .texttosay{
-    width:150px;
+    width:400px;
+    float: left;
+}
+
+.notepad{
+    float: left;
+}
+.notepadtext{
+    font-style: italic;
+    font-size: 22px;
+
 }
