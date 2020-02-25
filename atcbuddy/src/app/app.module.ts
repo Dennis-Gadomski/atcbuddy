@@ -10,6 +10,8 @@ import { TextToSayConverterService } from './services/text-to-say-converter.serv
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore'; // << Note AngularFirestoreModule !!!
+
 import { environment } from '../environments/environment';
 
 import {MatButtonModule} from '@angular/material/button';
@@ -38,6 +40,7 @@ import { NgxPayPalModule } from 'ngx-paypal';
   ],
   imports: [
     BrowserModule,
+    AngularFirestoreModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
