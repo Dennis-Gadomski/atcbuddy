@@ -1,9 +1,15 @@
 <div calss="wrapper">
-    <h2>{{selectedPhaseDetail}}</h2>
-    <div *ngFor="let phase of phaseInputs">
-        <label>{{phase}}</label><input [name]=phase (click)="onKey($event)"  (keyup)="onKey($event)" type="text" value="" /><br>
+  <h2>{{ selectedPhaseDetail }}</h2>
+  <div *ngFor="let phase of phaseInputs">
+    <label>{{ phase }}</label>
+    <input
+      [name]="phase"
+      (click)="onKey($event)"
+      (keyup)="onKey($event)"
+      type="text"
+      value=""
+    /><br />
+  </div>
 
-    </div>
-    
-    <app-texttosay [texttosay]="textToSayString" ></app-texttosay> 
+  <app-texttosay [texttosay]="textToSayString"></app-texttosay>
 </div>

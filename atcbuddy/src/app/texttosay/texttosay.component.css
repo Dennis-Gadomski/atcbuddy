@@ -1,13 +1,12 @@
-.texttosay{
-    width:400px;
-    float: left;
+.texttosay {
+  width: 400px;
+  float: left;
 }
 
-.notepad{
-    float: left;
+.notepad {
+  float: left;
 }
-.notepadtext{
-    font-style: italic;
-    font-size: 22px;
-
+.notepadtext {
+  font-style: italic;
+  font-size: 22px;
 }
