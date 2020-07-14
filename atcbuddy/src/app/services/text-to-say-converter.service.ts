@@ -4,35 +4,20 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class TextToSayConverterService {
-  returnString: string[];
-  constructor() {}
+  getTextWithoutParameters(text: string[], inputs: string[]): string[] {
+    const replacedInputsText = [];
 
-  getCleanText(texttosay: string[]): string {
-    let returnCleanString: string;
-    texttosay.forEach((element) => {
-      returnCleanString.concat(element);
+    text.forEach((text, index) => {
+      replacedInputsText[index] = text.replace(inputs[index], "");
     });
-
-    return returnCleanString;
-  }
-
-  getTextWithoutParameters(
-    texttosay: string[],
-    textInputs: string[]
-  ): string[] {
-    this.returnString = [];
-
-    texttosay.forEach((textToConvert, index) => {
-      this.returnString[index] = textToConvert.replace(textInputs[index], "");
-    });
-    return this.returnString;
+    return replacedInputsText;
   }
 
   updateTextToSay(
-    cleanTextToSay: string,
+    text: string,
     textToUpdate: string,
     textValue: string
   ): string {
-    return cleanTextToSay.replace(textToUpdate, textValue);
+    return text.replace(textToUpdate, textValue);
   }
 }
