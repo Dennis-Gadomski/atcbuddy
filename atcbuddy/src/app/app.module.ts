@@ -23,7 +23,6 @@ import { PhaseDetailComponent } from "./phase-detail/phase-detail.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { PhaseFormComponent } from "./phase-form/phase-form.component";
 import { TexttosayComponent } from "./texttosay/texttosay.component";
-import { DonationComponent } from "./donation/donation.component";
 import { NgxPayPalModule } from "ngx-paypal";
 
 @NgModule({
@@ -33,7 +32,6 @@ import { NgxPayPalModule } from "ngx-paypal";
     PhaseDetailComponent,
     PhaseFormComponent,
     TexttosayComponent,
-    DonationComponent,
   ],
   imports: [
     BrowserModule,
