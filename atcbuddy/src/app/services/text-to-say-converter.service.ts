@@ -1,34 +1,23 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class TextToSayConverterService {
-  returnString: string[];
-  constructor() { }
-  
-  getCleanText(texttosay: string[]): string {
-    let returnCleanString:string;
-    texttosay.forEach(element => {
-      returnCleanString.concat(element);
+  getTextWithoutParameters(text: string[], inputs: string[]): string[] {
+    const replacedInputsText = [];
+
+    text.forEach((text, index) => {
+      replacedInputsText[index] = text.replace(inputs[index], "");
     });
-
-    return returnCleanString;
+    return replacedInputsText;
   }
 
- 
-  getTextWithoutParameters(texttosay:string[], textInputs:string[]): string[]{
-    
-    this.returnString = [];
-    
-    texttosay.forEach((textToConvert, index)=>{
-      this.returnString[index] = textToConvert.replace(textInputs[index], "");
-    });
-    return this.returnString;
+  updateTextToSay(
+    text: string,
+    textToUpdate: string,
+    textValue: string
+  ): string {
+    return text.replace(textToUpdate, textValue);
   }
-
-  updateTextToSay(cleanTextToSay:string, textToUpdate:string, textValue:string): string{
-    return cleanTextToSay.replace(textToUpdate, textValue);
-  }
-
 }

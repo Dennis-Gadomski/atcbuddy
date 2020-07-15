@@ -1,14 +1,13 @@
-import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
-import {Phase} from '../models/phase';
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { Phase } from "../models/phase";
 
 @Component({
-  selector: 'app-phase-detail',
-  templateUrl: './phase-detail.component.html',
-  styleUrls: ['./phase-detail.component.css']
+  selector: "app-phase-detail",
+  templateUrl: "./phase-detail.component.html",
+  styleUrls: ["./phase-detail.component.css"],
 })
 export class PhaseDetailComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
   @Input() phases: Phase[];
   filteredPhase: Phase[];
   @Input() selectedPhase: string;
@@ -17,24 +16,21 @@ export class PhaseDetailComponent implements OnInit {
 
   @Output() phaseDetailSelectedEventEmitter = new EventEmitter();
 
-  ngOnInit(){
-    
-  }
+  ngOnInit() {}
 
   ngOnChanges() {
     this.filteredPhase = this.phases;
-    if(this.selectedPhase) {
-      this.filteredPhase = this.phases.filter(phase => phase.phase == this.selectedPhase);
-      this.phaseDetails = [...new Set(this.filteredPhase.map(phase => phase.phasedetail ))];
-      
+    if (this.selectedPhase) {
+      this.filteredPhase = this.phases.filter(
+        (phase) => phase.phase == this.selectedPhase
+      );
+      this.phaseDetails = [
+        ...new Set(this.filteredPhase.map((phase) => phase.phasedetail)),
+      ];
     }
-
-
   }
 
-  onValueChange(phaseDatail){
-    this.phaseDetailSelectedEventEmitter.emit(phaseDatail)
+  onValueChange(phaseDatail) {
+    this.phaseDetailSelectedEventEmitter.emit(phaseDatail);
   }
-
-
 }

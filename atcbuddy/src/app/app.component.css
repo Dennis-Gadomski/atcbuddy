@@ -1,59 +1,52 @@
-
-
-.wrapper{
-    max-width: 960px; /* 20px smaller, to fit the paddings on the sides */
-    margin: auto;
-    padding: 10px;
-
-}
-.donation{
-  margin:10px;
+.wrapper {
+  max-width: 960px; /* 20px smaller, to fit the paddings on the sides */
+  margin: auto;
   padding: 10px;
-
- 
+}
+.donation {
+  margin: 10px;
+  padding: 10px;
 }
 
 .phasenavigation {
-    height: 250px;
-    width: 200px;
-    margin:20px;
-    padding: 20px;
-    background-color: #27346d3d;    /* Medium blue */
-    float: left; 
+  height: 250px;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #27346d3d; /* Medium blue */
+  float: left;
 
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
-  .globalvariables{
-    height: 50px;
-    float: left; 
-    margin:20px;
-    padding: 20px;
-    background-color: #B2D6FF;    /* Medium blue */
-    width: fit-content;
-
-    
-  }
-
-  .phasedetaillist {
-    height: 250px;
-    width: 250px;
-    margin:20px;
-    padding: 20px;
-    background-color: #27346d3d;    /* Medium blue */
-    
-    float: left; 
-
-    border-radius: 15px;
+.globalvariables {
+  height: 50px;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  background-color: #b2d6ff; /* Medium blue */
+  width: fit-content;
 }
-.phaseform{
-        width:810px;
-        height: 1200px;
-        background-color: rgba(255, 228, 196, 0.233);
-        float: left;
-        clear: left;
-        margin:20px;
-        padding: 20px;
-    
-        border-radius: 15px;
+
+.phasedetaillist {
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #27346d3d; /* Medium blue */
+
+  float: left;
+
+  border-radius: 15px;
+}
+.phaseform {
+  width: 810px;
+  height: 1200px;
+  background-color: rgba(255, 228, 196, 0.233);
+  float: left;
+  clear: left;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 15px;
 }

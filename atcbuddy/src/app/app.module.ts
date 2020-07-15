@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { PhaseNavigationComponent } from './phase-navigation/phase-navigation.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PhaseService } from './services/PhaseService';
-import { TextToSayConverterService } from './services/text-to-say-converter.service';
-
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { PhaseNavigationComponent } from "./phase-navigation/phase-navigation.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { PhaseService } from "./services/PhaseService";
+import { TextToSayConverterService } from "./services/text-to-say-converter.service";
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore'; // << Note AngularFirestoreModule !!!
@@ -27,7 +26,22 @@ import { PhaseFormComponent } from './phase-form/phase-form.component';
 import { TexttosayComponent } from './texttosay/texttosay.component';
 import { DonationComponent } from './donation/donation.component';
 import { NgxPayPalModule } from 'ngx-paypal';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { environment } from "../environments/environment";
 
+import { MatButtonModule } from "@angular/material/button";
+import { MatListModule } from "@angular/material/list";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from "@angular/forms";
+import { AngularFirestore } from "@angular/fire/firestore";
+import { PhaseDetailComponent } from "./phase-detail/phase-detail.component";
+import { MatRadioModule } from "@angular/material/radio";
+import { PhaseFormComponent } from "./phase-form/phase-form.component";
+import { TexttosayComponent } from "./texttosay/texttosay.component";
+import { NgxPayPalModule } from "ngx-paypal";
 
 @NgModule({
   declarations: [
@@ -36,7 +50,6 @@ import { NgxPayPalModule } from 'ngx-paypal';
     PhaseDetailComponent,
     PhaseFormComponent,
     TexttosayComponent,
-    DonationComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +65,9 @@ import { NgxPayPalModule } from 'ngx-paypal';
     MatInputModule,
     FormsModule,
     MatRadioModule,
-    NgxPayPalModule
+    NgxPayPalModule,
   ],
   providers: [PhaseService, AngularFirestore, TextToSayConverterService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

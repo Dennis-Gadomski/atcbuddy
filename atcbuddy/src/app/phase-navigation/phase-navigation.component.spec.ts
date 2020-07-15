@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { PhaseNavigationComponent } from './phase-navigation.component';
+import { PhaseNavigationComponent } from "./phase-navigation.component";
 
-describe('PhaseNavigationComponent', () => {
+describe("PhaseNavigationComponent", () => {
   let component: PhaseNavigationComponent;
   let fixture: ComponentFixture<PhaseNavigationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhaseNavigationComponent ]
-    })
-    .compileComponents();
+      declarations: [PhaseNavigationComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('PhaseNavigationComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

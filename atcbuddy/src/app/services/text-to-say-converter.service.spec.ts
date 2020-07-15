@@ -1,12 +1,14 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { TextToSayConverterService } from './text-to-say-converter.service';
+import { TextToSayConverterService } from "./text-to-say-converter.service";
 
-describe('TextToSayConverterService', () => {
+describe("TextToSayConverterService", () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
-  it('should be created', () => {
-    const service: TextToSayConverterService = TestBed.get(TextToSayConverterService);
+  it("should be created", () => {
+    const service: TextToSayConverterService = TestBed.get(
+      TextToSayConverterService
+    );
     expect(service).toBeTruthy();
   });
 });
