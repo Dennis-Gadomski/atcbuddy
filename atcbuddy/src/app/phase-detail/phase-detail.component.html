@@ -1,18 +1,13 @@
-<div class="detailswrapper">
-  <label id="example-radio-group-label">Select a phase</label>
-
-  <mat-radio-group
-    aria-labelledby="radio-group-label"
-    class="radio-group"
-    [(ngModel)]="selectedPhaseDetail"
-  >
-    <mat-radio-button
-      (click)="onValueChange(phasedetail)"
-      [value]="phasedetail"
-      *ngFor="let phasedetail of phaseDetails"
+<mat-form-field appearance="fill">
+  <mat-label>Select phrase</mat-label>
+  <mat-select>
+    <mat-option
+      class="phasedetail-list"
+      *ngFor="let phaseDetail of phaseDetails"
+      [value]="phaseDetail"
+      (click)="onValueChange(phaseDetail)"
     >
-      {{ phasedetail }}
-    </mat-radio-button>
-    <br /><br /><br /><br />
-  </mat-radio-group>
-</div>
+      {{ phaseDetail }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

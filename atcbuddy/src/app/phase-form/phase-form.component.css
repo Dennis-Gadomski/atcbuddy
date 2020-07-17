@@ -1,14 +1,6 @@
 .wrapper {
-  padding: 20px;
-  margin: 20px;
-  display: block;
-  text-align: center;
 }
 
 input,
 label {
-  margin: 5px;
-  display: inline-block;
-
-  width: 50%;
 }

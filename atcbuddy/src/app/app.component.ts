@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { Phase } from "./models/phase";
 import { PhaseService } from "./services/PhaseService";
 import { Observable } from "rxjs";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, FormGroup } from "@angular/forms";
 
 @Component({
   selector: "app-root",
@@ -16,6 +16,9 @@ export class AppComponent {
   callsign: string;
   selectedPhase: string;
   selectedPhaseDetail: string;
+
+  phaseFormGroup: FormGroup;
+  phaseDetailFormGroup: FormGroup;
 
   constructor(private phaseService: PhaseService) {
     this.phases$ = this.phaseService.getPhases();

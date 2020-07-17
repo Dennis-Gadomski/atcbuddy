@@ -1,52 +1,19 @@
-.wrapper {
-  max-width: 960px; /* 20px smaller, to fit the paddings on the sides */
-  margin: auto;
-  padding: 10px;
-}
-.donation {
+.stepper-wrapper {
   margin: 10px;
-  padding: 10px;
 }
 
-.phasenavigation {
-  height: 250px;
-  width: 200px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #27346d3d; /* Medium blue */
-  float: left;
-
-  border-radius: 15px;
+mat-horizontal-stepper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
-.globalvariables {
-  height: 50px;
-  float: left;
-  margin: 20px;
-  padding: 20px;
-  background-color: #b2d6ff; /* Medium blue */
-  width: fit-content;
+.phase-selection {
+  min-height: 120px;
 }
 
-.phasedetaillist {
-  height: 250px;
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #27346d3d; /* Medium blue */
-
-  float: left;
-
-  border-radius: 15px;
+.phase-detaillist {
+  min-height: 120px;
 }
-.phaseform {
-  width: 810px;
-  height: 1200px;
-  background-color: rgba(255, 228, 196, 0.233);
-  float: left;
-  clear: left;
-  margin: 20px;
-  padding: 20px;
-
-  border-radius: 15px;
+.phase-form {
+  margin-top: 50px;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Phase } from "../models/phase";
+import { FormGroup } from "@angular/forms";
 
 @Component({
   selector: "app-phase-navigation",
@@ -10,6 +11,7 @@ export class PhaseNavigationComponent implements OnInit {
   constructor() {}
 
   @Input() phases: Phase[];
+  @Input() phaseFormGroup: FormGroup;
   @Output() phaseSelectedEventEmitter = new EventEmitter();
   phaseNames: string[];
 

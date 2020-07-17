@@ -16,13 +16,13 @@ import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatInputModule } from "@angular/material/input";
+import { MatStepperModule } from "@angular/material/stepper";
+import { MatSelectModule } from "@angular/material/select";
 import { FormsModule } from "@angular/forms";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { PhaseDetailComponent } from "./phase-detail/phase-detail.component";
-import { MatRadioModule } from "@angular/material/radio";
 import { PhaseFormComponent } from "./phase-form/phase-form.component";
 import { TexttosayComponent } from "./texttosay/texttosay.component";
-import { NgxPayPalModule } from "ngx-paypal";
 
 @NgModule({
   declarations: [
@@ -45,8 +45,8 @@ import { NgxPayPalModule } from "ngx-paypal";
     MatSidenavModule,
     MatInputModule,
     FormsModule,
-    MatRadioModule,
-    NgxPayPalModule,
+    MatStepperModule,
+    MatSelectModule,
   ],
   providers: [PhaseService, AngularFirestore, TextToSayConverterService],
   bootstrap: [AppComponent],

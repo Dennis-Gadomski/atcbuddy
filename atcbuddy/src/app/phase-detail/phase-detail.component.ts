@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Phase } from "../models/phase";
+import { FormGroup } from "@angular/forms";
 
 @Component({
   selector: "app-phase-detail",
@@ -9,6 +10,8 @@ import { Phase } from "../models/phase";
 export class PhaseDetailComponent implements OnInit {
   constructor() {}
   @Input() phases: Phase[];
+  @Input() phaseFormGroup: FormGroup;
+
   filteredPhase: Phase[];
   @Input() selectedPhase: string;
   phaseDetails: string[];

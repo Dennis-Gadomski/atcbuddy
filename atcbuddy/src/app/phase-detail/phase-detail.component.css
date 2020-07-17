@@ -1,9 +1,2 @@
-.radio-group {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 5;
-}
-
-.radio-button {
-  margin: 5px;
+.phase-detail-selection {
 }

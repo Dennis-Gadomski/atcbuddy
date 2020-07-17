@@ -1,7 +1,13 @@
-<div>
-  <div class="phasenameList" *ngFor="let phase of phaseNames">
-    <button mat-stroked-button (click)="onClickPhase(phase)">
+<mat-form-field appearance="fill">
+  <mat-label>Select a phase</mat-label>
+  <mat-select>
+    <mat-option
+      class="phasename=-list"
+      *ngFor="let phase of phaseNames"
+      [value]="phase"
+      (click)="onClickPhase(phase)"
+    >
       {{ phase }}
-    </button>
-  </div>
-</div>
+    </mat-option>
+  </mat-select>
+</mat-form-field>
