@@ -23,8 +23,6 @@ export class PhaseFormComponent implements OnInit {
   onKey(event) {
     this.cleanTextToSay.forEach((element, index) => {
       if (this.cleanTextToSay[index].includes(event.target.name)) {
-        console.log(event.target.name, "event");
-
         this.textToSay[index] = this.cleanTextToSay[index].replace(
           event.target.name,
           event.target.value
@@ -32,7 +30,6 @@ export class PhaseFormComponent implements OnInit {
       }
     });
     this.textToSayString = this.textToSay.join();
-    console.log(this.textToSayString);
   }
 
   constructor(private textToSayConverterService: TextToSayConverterService) {}
