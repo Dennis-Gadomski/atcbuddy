@@ -10,7 +10,7 @@ import { FormGroup } from "@angular/forms";
 export class PhaseDetailComponent implements OnInit {
   constructor() {}
   @Input() phases: Phase[];
-  @Input() phaseFormGroup: FormGroup;
+  @Input() phaseDetailFormGroup: FormGroup;
 
   filteredPhase: Phase[];
   @Input() selectedPhase: string;

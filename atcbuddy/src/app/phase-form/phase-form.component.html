@@ -1,15 +1,16 @@
-<div calss="wrapper">
-  <h2>{{ selectedPhaseDetail }}</h2>
-  <div *ngFor="let phase of phaseInputs">
-    <label>{{ phase }}</label>
-    <input
-      [name]="phase"
-      (click)="onKey($event)"
-      (keyup)="onKey($event)"
-      type="text"
-      value=""
-    /><br />
+<div class="phase-form-wrapper">
+  <div class="phase-form">
+    <form>
+      <div class="phase-form-input" *ngFor="let phase of phaseInputs">
+        <mat-form-field>
+          <mat-label> {{ phase }} </mat-label>
+          <input matInput [name]="phase" (keyup)="onKey($event)" type="text" />
+        </mat-form-field>
+      </div>
+    </form>
   </div>
-
-  <app-texttosay [texttosay]="textToSayString"></app-texttosay>
+  <app-texttosay
+    class="texttosay"
+    [texttosay]="textToSayString"
+  ></app-texttosay>
 </div>

@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="stepper-wrapper">
     <mat-horizontal-stepper linear="true" #stepper>
-      <mat-step [stepControl]="phaseFormGroup">
-        <div class="phase-selection">
+      <mat-step class="phase-selection" [stepControl]="phaseFormGroup">
+        <div>
           <app-phase-navigation
             [phaseFormGroup]="phaseFormGroup"
             [phases]="phases"
@@ -14,10 +14,10 @@
         </div>
       </mat-step>
 
-      <mat-step [stepControl]="phaseFormGroup">
-        <div class="phase-detaillist">
+      <mat-step class="phase-detaillist" [stepControl]="phaseFormGroup">
+        <div>
           <app-phase-detail
-            [phaseFormGroup]="phaseDetailFormGroup"
+            [phaseDetailFormGroup]="phaseDetailFormGroup"
             [phases]="phases"
             [selectedPhase]="selectedPhase"
             (phaseDetailSelectedEventEmitter)="eventClickedPhaseDetail($event)"

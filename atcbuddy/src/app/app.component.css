@@ -5,15 +5,5 @@
 mat-horizontal-stepper {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-}
-
-.phase-selection {
-  min-height: 120px;
-}
-
-.phase-detaillist {
-  min-height: 120px;
-}
-.phase-form {
-  margin-top: 50px;
+  max-height: 190px;
 }

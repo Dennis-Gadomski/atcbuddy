@@ -1,0 +1,22 @@
+.phase-form-wrapper {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "phaseform texttosay";
+  grid-template-columns: 1fr 1fr;
+  min-height: 400px;
+}
+
+.phase-form {
+  grid-area: phaseform;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.texttosay {
+  grid-area: texttosay;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}

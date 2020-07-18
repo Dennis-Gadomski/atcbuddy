@@ -23,18 +23,11 @@ export class PhaseFormComponent implements OnInit {
   onKey(event) {
     this.cleanTextToSay.forEach((element, index) => {
       if (this.cleanTextToSay[index].includes(event.target.name)) {
-        console.log(this.cleanTextToSay[index]);
         console.log(event.target.name, "event");
 
         this.textToSay[index] = this.cleanTextToSay[index].replace(
           event.target.name,
           event.target.value
-        );
-        console.log(
-          this.cleanTextToSay[index].replace(
-            event.target.name,
-            event.target.value
-          )
         );
       }
     });

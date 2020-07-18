@@ -18,6 +18,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatInputModule } from "@angular/material/input";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatSelectModule } from "@angular/material/select";
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { FormsModule } from "@angular/forms";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { PhaseDetailComponent } from "./phase-detail/phase-detail.component";
@@ -47,6 +48,7 @@ import { TexttosayComponent } from "./texttosay/texttosay.component";
     FormsModule,
     MatStepperModule,
     MatSelectModule,
+    MatFormFieldModule,
   ],
   providers: [PhaseService, AngularFirestore, TextToSayConverterService],
   bootstrap: [AppComponent],
